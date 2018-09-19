@@ -143,10 +143,126 @@ console.log('this objects works!');
 //     { title: "Dayereh", director: "Jafar Panahi", year: 2000 },
 //     { title: "Dayereh", director: "Jafar Panahi", year: 2000 }
 // ]
-
+//
 // const moviesObj = {};
 // for(let i = 0; i < movies.length; i++) {
+//   // key first
+//   const keyInObject = Object.keys(moviesObj)[i];
+//   // value out of the object
+//   console.log(moviesObj[keyInObject]);
 // // print out the title
-//   console.log(movies[i].title);
-//     moviesObj[movies[i].title] = 0;
 // }
+//
+// for(let prop in moviesObj) {
+//   console.log(moviesObj[prop]);
+// }
+
+
+// Solar System Lab
+const solarSystem = [
+	{ name: "Mercury", ringSystem: false, moons: [] },
+	{ name: "Venus", ringSystem: false, moons: [] },
+	{ name: "Earth", ringSystem: false, moons: ["The Moon"] },
+	{ name: "Mars", ringSystem: false, moons: ["Phobos", "Deimos"] },
+	{ name: "Jupiter", ringSystem: true, moons: ["Europa", "Ganymede", "Io", "Callisto"] },
+	{ name: "Saturn", ringSystem: true, moons: ["Titan", "Enceladus", "Rhea", "Mimas"] },
+	{ name: "Uranus", ringSystem: true, moons: ["Miranda", "Titania", "Ariel", "Umbriel"] },
+	{ name: "Neptune", ringSystem: true, moons: ["Triton", "Nereid"] }
+];
+
+// 0, 1, 2.
+console.log(solarSystem[0].ringSystem);
+  console.log(solarSystem[4]);
+    console.log(solarSystem[7].moons[1]);
+
+// 3.
+solarSystem[1].moons.push("Endor");
+  console.log(solarSystem[1]);
+
+// 4.
+  const Pluto = {
+    name: 'Pluto',
+    ringSystem: false,
+    moons: ["Charon"]
+  }
+  solarSystem.push(Pluto);
+    console.log(solarSystem[8]);
+
+// 5.
+const diameter = {
+  radius: 3959,
+  area: function() {
+    return Math.PI * this.radius * this.radius;
+  }
+};
+
+solarSystem[2].Diameter = diameter.area();
+  console.log(solarSystem[2]);
+
+// 6.
+solarSystem[0].ringSystem = true;
+console.log(solarSystem[0]);
+
+// 7.
+solarSystem[6].moons[3] = "Oberon";
+console.log(solarSystem[6]);
+
+// 8.
+console.log(solarSystem);
+
+
+
+
+
+// for(let i = 0; i < solarSystem.length; i++) {
+//   if
+// }
+
+
+
+
+
+
+
+
+// Function Objects
+// function Book(pages, author, type) {
+//   this.pages = pages;
+//   this.author = author;
+//   this.type = type;
+//   this.getDetails = function() {
+//     return this.type + " writen by " + this.author + " is " + this.pages + " pages long.";
+//   }
+// };
+//
+// let book = new Book(200, 'L.S. Lewis', 'hardback');
+// let book2 = new Book(500, 'J.K. Rollin', 'softback');
+//   console.log(book.getDetails());
+//     console.log(book2.getDetails());
+// //
+// //
+// // //
+// const circle = {
+//   radius: 25,
+//   area: function() {
+//     return Math.PI * this.radius * this.radius;
+//   }
+// };
+// //
+// console.log(circle.area());
+// //
+// //
+// //
+// function Shoe(size, color, type, gender) {
+//   this.size = size;
+//   this.color = color;
+//   this.type = type;
+//   this.gender = gender;
+//   this.getDetails = function() {
+//     return 'The shoe is ' + this.size + ', color ' + this.color + ' and the type ' + this.type +
+//     ' and for ' + this.gender ;
+//   }
+// };
+//
+// let shoe = new Shoe(6.5, 'black', 'high heels', 'female');
+// console.log(shoe.getDetails());
