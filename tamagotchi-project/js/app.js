@@ -1,8 +1,6 @@
 // console.log("working fine");
 let time = 10;
-let play = 10;
-let feed = 10;
-let sleep = 10;
+let ageStart = 0;
 
 
 $('.submit').on('click', () => {
@@ -19,47 +17,80 @@ const personNew = (inputVal) => {
 }
 
 
+const setTimer2 = () => {
+  let ageNew = setInterval(function() {
+    ageNew++;
+
+    let age = $('#ageCow').val()
+    age++;
+    $('#ageCow').val(age);
+
+    if(ageStart === 25) {
+      clearInterval(age);
+    }
+  }, 2000);
+};
+
+
 const setTimer = () => {
   let timer = setInterval(function() {
     time--;
-
-    let mood = $('#moodBetter').val()
-    mood--;
-    $('#moodBetter').val(mood);
-
-          let food = $('#hunger').val()
-          food--;
-          $('#hunger').val(food);
-
-                let dream = $('#energy').val()
-                dream--;
-                $('#energy').val(dream);
+changePlay(false);
+  changeHunger(false);
+    changeSleep(false);
 
     if (time === 0) {
       clearInterval(timer);
+      alert('Winner!');
     }
   }, 2000);
 };
 
 $('.startBtn').on('click', () => {
   setTimer();
-})
+  setTimer2();
+});
+
+
+const changePlay = (play) =>{
+let mood = $('#moodBetter').val()
+  if(play === true) {
+    mood++
+  } else {
+    mood--;
+  }
+$('#moodBetter').val(mood);
+}
+
+const changeHunger = (eat) =>{
+let food = $('#hunger').val()
+  if(eat === true) {
+    food++
+  } else {
+    food--;
+  }
+$('#hunger').val(food);
+}
+
+const changeSleep = (sleep) =>{
+let dream = $('#energy').val()
+  if(sleep === true) {
+    dream++
+  } else {
+    dream--;
+  }
+$('#energy').val(dream);
+}
 
 
 $('.play').on('click', () => {
-  let mood = $('#moodBetter').val()
-  mood++;
-  $('#moodBetter').val(mood);
-})
+  changePlay(true);
+});
 
 $('.feed').on('click', () => {
-  let food = $('#hunger').val()
-  food++;
-  $('#hunger').val(food);
-})
+  changeHunger(true);
+});
 
 $('.sleep').on('click', () => {
-  let dream = $('#energy').val()
-  dream++;
-  $('#energy').val(dream);
-})
+  changeSleep(true);
+});
