@@ -1,0 +1,115 @@
+header {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  padding: 80px 0 2px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #C6E9F6
+}
+
+h1 {
+  font-family: "Montserrat";
+  color: white;
+  font-size: 100px;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  height: 50px;
+}
+
+h3 {
+  font-family: "Montserrat";
+  color: white;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.play {
+  background: url("../img/play2.png");
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  background-position: center;
+  border: none;
+}
+
+.feed {
+  background: url("../img/feed2.png");
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  background-position: center;
+  border: none;
+}
+
+.sleep {
+  background: url("../img/nap2.png");
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  background-position: center;
+  border: none;
+}
+
+#play {
+  display: block;
+  height: 150px;
+  width: 150px;
+  margin: 50px;
+}
+
+#feed {
+  display: block;
+  height: 150px;
+  width: 150px;
+  margin: 50px;
+}
+
+#sleep {
+  display: block;
+  height: 150px;
+  width: 150px;
+  margin: 50px;
+}
+
+#container {
+  max-width: auto;
+  max-height: 20%;
+  resize: none;
+  overflow: scroll;
+  margin: auto;
+}
+
+.cow-head {
+  position: relative;
+  max-width: 50%;
+  height: auto;
+}
+
+.cow-body {
+  position: relative;
+  height: 0;
+}
+
+.footer {
+  clear: both;
+  padding: 2px 10px;
+  display: block;
+  background-color: #C6E9F6;
+  font-family: "Montserrat";
+}
+
+p {
+  text-align: right;
+  color: white;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.footer img {
+  max-width: 2%;
+  text-align: left;
+  margin: 8px;
+}
