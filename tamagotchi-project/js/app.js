@@ -10,7 +10,6 @@ $('.submit').on('click', () => {
   personNew($input);
 });
 
-
 const personNew = (inputVal) => {
   // const $div = $('<select1/>').addClass('nameOfPerson');
   $('contain').append('<h2>' + inputVal + '</h2>');

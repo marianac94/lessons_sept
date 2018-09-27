@@ -1,56 +1,80 @@
 <html>
+
 <head>
 
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<title>Tamagotchi Project</title>
+  <title>Tamagotchi Project</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700" rel="stylesheet">
 
-  </head>
-
-  <header>
-    <h1>tamagotchi</h1>
-    <h3>mini-project</h3>
-  </header>
+</head>
 
 <body>
 
-<div class="name">
-  <label>Hi! How are you gonna name me?</label>
-  <input type="text" name="tamagotchiName" required placeholder="Be creative...">
-  <button class="submit">Submit</button>
-  <contain></contain>
-</div>
+  <div class="up">
+    <header>
+      <h1>tamagotchi</h1>
+      <h3>mini-project</h3>
+    </header>
+  </div>
 
-<button class="startBtn">start</button>
 
-<div class="btns">
-  <button class="play"></button>
-  <progress id="moodBetter" value="10" max="10"></progress>
-  <button class="feed"></button>
-  <progress id="hunger" value="7" max="10"></progress>
-  <button class="sleep"></button>
-  <progress id="energy" value="8" max="10"></progress>
-  <button class="age">my age is:</button>
-  <progress id="ageCow" value="0" max="25"></progress>
-</div>
+    <div class="name">
+      <label>hello!<br/>my name is</label>
+    </div>
+    
+      <input type="text" name="tamagotchiName" required placeholder="Be creative...">
 
-<div id="container">
-  <div class="cow-body"><img src="img/newbody.png" alt="body"></div>
-  <div class="cow-head"><img src="img/newface.png" alt="head"></div>
-</div>
+      <button class="submit">Submit</button>
+      <contain></contain>
 
-<div class="footer">
-  <p>© All rights reserved</p>
-  <img src="img/FB-01.png" alt="facebookIcon">
-  <img src="img/IG-01.png" alt="instagramIcon">
-  <img src="img/TWT-01.png" alt="twitterIcon">
-</div>
 
-<script src="js/app.js"></script>
-  </body>
+      <button class="age">my age is:</button>
+      <progress id="ageCow" value="0" max="25"></progress>
+
+    <div class="start">
+      <button class="startBtn">start</button>
+    </div>
+
+  <div class="mood">
+    <button class="play"></button>
+    <progress id="moodBetter" value="10" max="10"></progress>
+    <button class="feed"></button>
+    <progress id="hunger" value="7" max="10"></progress>
+    <button class="sleep"></button>
+    <progress id="energy" value="8" max="10"></progress>
+  </div>
+
+  <div class="daytime">
+    <img src="img/day-01.png" alt="body">
+  </div>
+
+  <div class="cow">
+    <img src="img/NEWCOW.png" alt="all">
+  </div>
+
+      <!-- <div class="footer">
+        <div class="media">
+          <img src="img/FB-01.png" alt="facebookIcon">
+          <img src="img/IG-01.png" alt="instagramIcon">
+          <img src="img/TWT-01.png" alt="twitterIcon">
+        </div>
+          <div class="signup">
+            <p>sign up for more cool stuff!</p>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <button class="enter">Submit</button>
+          </div>
+          <div class="copy">
+            <p>© All rights reserved</p>
+          </div>
+        </div> -->
+
+        <script src="js/app.js"></script>
+</body>
+
 </html>

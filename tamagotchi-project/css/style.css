@@ -1,116 +1,195 @@
-header {
+/* header {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  height: 250px;
-  font-weight: bold;
-  text-align: center;
+  height: 300px;
+  overflow: auto;
   background-color: #C6E9F6
-}
-
-body {
-  padding: 10%;
-}
+} */
 
 h1 {
+  font-family: "Montserrat";
+  color: white;
+  font-size: 200px;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  height: 50px;
+  text-align: center;
+}
+
+h2 {
   font-family: "Montserrat";
   color: white;
   font-size: 100px;
   text-transform: uppercase;
   letter-spacing: 20px;
   height: 50px;
+  text-align: center;
 }
 
 h3 {
   font-family: "Montserrat";
   color: white;
-  font-size: 40px;
+  font-size: 80px;
+  padding: 1%;
   text-transform: uppercase;
   letter-spacing: 10px;
+  text-align: center;
+}
+
+body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  min-width: 800px;
+  min-height: 600px;
+  background-color: #C6E9F6;
+}
+
+.startBtn {
+  font-family: "Montserrat";
+  font-size: 24px;
+  color: #C6E9F6;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+  padding: 0 20px;
+  width: auto;
+  height: 3%;
+  border-radius: 30px;
+  background-color: white;
+  display: flex;
+  font-size: 24px;
+  color: #C6E9F6;
+  border: none;
+  margin: 20px;
+}
+
+.submit {
+  font-family: "Montserrat";
+  font-size: 24px;
+  color: #C6E9F6;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+  padding: 0 20px;
+  width: auto;
+  height: 3%;
+  border-radius: 30px;
+  background-color: white;
+  display: flex;
+  font-size: 24px;
+  color: #C6E9F6;
+  border: none;
+  margin: 20px;
+}
+
+.daytime {
+  position: relative;
+  object-fit: fill;
+  left: 0;
+  width: 200%;
+  height: auto;
+  z-index: -1;
+}
+
+.cow {
+  width: 30%;
+  height: 35%;
+  position: absolute;
+  top: 1100;
+  left: 1000;
+  float: right;
+}
+
+.name {
+  display: block;
+  padding: 0 20px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+  border: none;
+  font-family: "Montserrat";
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  margin: 20px;
+}
+
+.age {
+  display: block;
+  padding: 0 20px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+  border: none;
+  font-family: "Montserrat";
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  margin: 20px;
+}
+
+input::placeholder {
+  font-style: "Montserrat";
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: #C6E9F6;
+  background-color: white;
+  margin: 20px;
+  padding: 10px;
+  font-size: 2px;
+}
+
+.mood {
+  position: relative;
+  padding: 20px;
 }
 
 .play {
   background: url("../img/play2.png");
+  background-size: contain;
   background-repeat: no-repeat;
   display: block;
-  width: 500px;
-  height: 500px;
+  width: 200px;
+  height: 200px;
   background-position: center;
   border: none;
 }
 
 .feed {
   background: url("../img/feed2.png");
+  background-size: contain;
   background-repeat: no-repeat;
   display: block;
-  width: 500px;
-  height: 500px;
+  width: 200px;
+  height: 200px;
   background-position: center;
   border: none;
 }
 
 .sleep {
   background: url("../img/nap2.png");
+  background-size: contain;
   background-repeat: no-repeat;
   display: block;
-  width: 500px;
-  height: 500px;
+  width: 200px;
+  height: 200px;
   background-position: center;
   border: none;
 }
 
-.age {
-  font-family: "Montserrat"
-  color: #C6E9F6;
-  text-transform: uppercase;
-  letter-spacing: 8px;
-  border: none;
-}
-
-#play {
-  display: block;
-  height: 150px;
-  width: 150px;
-  margin: 50px;
-}
-
-#feed {
-  display: block;
-  height: 150px;
-  width: 150px;
-  margin: 50px;
-}
-
-#sleep {
-  display: block;
-  height: 150px;
-  width: 150px;
-  margin: 50px;
-}
-
-#container {
-  max-width: auto;
-  max-height: 20%;
-  resize: none;
-  overflow: scroll;
-  margin: auto;
-}
-
-.cow-head {
-  position: relative;
-  max-width: 50%;
-  height: auto;
-}
-
-.cow-body {
-  position: relative;
-  height: 0;
-}
-
-.footer {
+/* .footer {
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
+  height: 300px;
   flex-flow: wrap;
   align-content: baseline;
   padding: 10px 10px;
@@ -118,7 +197,7 @@ h3 {
   font-family: "Montserrat";
 }
 
-p {
+.signup {
   width: 425px;
   color: white;
   font-size: 10px;
@@ -126,8 +205,9 @@ p {
   letter-spacing: 3px;
 }
 
-.footer img {
+.media {
+  position: absolute;
   max-width: 2%;
   text-align: left;
   margin: 8px;
-}
+} */
