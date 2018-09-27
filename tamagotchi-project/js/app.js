@@ -24,7 +24,7 @@ const setTimer2 = () => {
     age++;
     $('#ageCow').val(age);
 
-    if(ageStart === 25) {
+    if (ageStart === 25) {
       clearInterval(age);
     }
   }, 2000);
@@ -34,8 +34,8 @@ const setTimer2 = () => {
 const setTimer = () => {
   let timer = setInterval(function() {
     time--;
-changePlay(false);
-  changeHunger(false);
+    changePlay(false);
+    changeHunger(false);
     changeSleep(false);
 
     if (time === 0) {
@@ -51,34 +51,34 @@ $('.startBtn').on('click', () => {
 });
 
 
-const changePlay = (play) =>{
-let mood = $('#moodBetter').val()
-  if(play === true) {
+const changePlay = (play) => {
+  let mood = $('#moodBetter').val()
+  if (play === true) {
     mood++
   } else {
     mood--;
   }
-$('#moodBetter').val(mood);
+  $('#moodBetter').val(mood);
 }
 
-const changeHunger = (eat) =>{
-let food = $('#hunger').val()
-  if(eat === true) {
+const changeHunger = (eat) => {
+  let food = $('#hunger').val()
+  if (eat === true) {
     food++
   } else {
     food--;
   }
-$('#hunger').val(food);
+  $('#hunger').val(food);
 }
 
-const changeSleep = (sleep) =>{
-let dream = $('#energy').val()
-  if(sleep === true) {
+const changeSleep = (sleep) => {
+  let dream = $('#energy').val()
+  if (sleep === true) {
     dream++
   } else {
     dream--;
   }
-$('#energy').val(dream);
+  $('#energy').val(dream);
 }
 
 
