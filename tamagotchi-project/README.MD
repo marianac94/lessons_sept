@@ -1,3 +1,3 @@
 # Tamagotchi Project
-Inline-style:
+my pic:
 ![alt text](img/new2.png "Wireframe")
