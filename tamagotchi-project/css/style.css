@@ -1,3 +1,7 @@
+* {
+  margin: none;
+}
+
 /* header {
   position: fixed;
   top: 0;
@@ -7,6 +11,7 @@
   overflow: auto;
   background-color: #C6E9F6
 } */
+
 h1 {
   font-family: "Montserrat";
   color: white;
@@ -27,8 +32,41 @@ h2 {
   text-align: center;
 }
 
-* {
-  margin: none;
+.name {
+  display: block;
+  padding: 40px 20px;
+  height: 40px;
+  align-content: flex-start;
+  border-radius: 10px;
+  font-size: 40px;
+  color: white;
+  border: none;
+  font-family: "Montserrat";
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  margin: 20px;
+  float: center;
+}
+
+input {
+    width: 400px;
+    padding: 0 20px;
+    float: center;
+}
+
+input,
+input::-webkit-input-placeholder {
+  line-height: 3;
+  border-radius: 10px;
+  border: none;
+  font-style: "Montserrat";
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: #C6E9F6;
+  background-color: white;
+  font-size: 10px;
+  font-weight: 600;
 }
 
 h3 {
@@ -42,55 +80,65 @@ h3 {
 }
 
 body {
-  background-image: url("../img/day-01.png");
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  max-width: 100%;
-  min-height: 600px;
+  /* max-width: 100%;
+  min-height: 600px; */
   background-color: #C6E9F6;
+}
+
+.wrapper {
+  position: fixed;
+  background-image: url("../img/day-01.png");
   background-position: center bottom;
   background-repeat: no-repeat;
+  left: 0;
+  top:0;
+  right: 0;
+  bottom: 0;
 }
 
 .startBtn {
+  font-weight: 800;
+  line-height: 3;
+  border-radius: 10px;
   font-family: "Montserrat";
-  font-size: 24px;
-  color: #C6E9F6;
   text-transform: uppercase;
   letter-spacing: 10px;
+  font-size: 40px;
+  color: #C6E9F6;
   text-align: center;
   padding: 0 20px;
   width: auto;
-  height: 3%;
-  border-radius: 30px;
   background-color: white;
   display: flex;
   font-size: 24px;
   color: #C6E9F6;
   border: none;
   margin: 20px;
+  display: block;
+  margin: 0 auto;
 }
 
 .submit {
-  font-family: "Montserrat";
-  font-size: 24px;
-  color: #C6E9F6;
   text-transform: uppercase;
+  font-weight: 600;
   letter-spacing: 10px;
+  font-size: 10px;
+  line-height: 3;
+  border-radius: 10px;
+  border: none;
+  font-family: "Montserrat";
+  color: #C6E9F6;
   text-align: center;
   padding: 0 20px;
   width: auto;
-  height: 3%;
-  border-radius: 30px;
   background-color: white;
-  display: flex;
-  font-size: 24px;
   color: #C6E9F6;
-  border: none;
-  margin: 20px;
+  margin: 30px 40px;
 }
 
 /* .daytime {
@@ -107,47 +155,25 @@ body {
   float: right;
 }
 
-.name {
-  display: block;
-  padding: 40px 20px;
-  height: 40px;
-  border-radius: 10px;
-  font-size: 40px;
-  color: white;
-  border: none;
-  font-family: "Montserrat";
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 20px;
-  margin: 20px;
-}
-
 .age {
-  font-size: 30px;
-  color: #C6E9F6;
-  border: none;
-  font-family: "Montserrat";
-  text-transform: uppercase;
-  letter-spacing: 20px;
-  margin: 20px;
-}
-
-input::placeholder {
-  font-style: "Montserrat";
   text-transform: uppercase;
   letter-spacing: 10px;
+  font-size: 10px;
+  font-weight: 600;
   color: #C6E9F6;
-  background-color: white;
+  border: none;
+  font-family: "Montserrat";
   margin: 20px;
-  padding: 10px;
-  font-size: 2px;
+  line-height: 3;
+  border-radius: 10px;
+  border: none;
 }
 
 .mood {
   position: relative;
   margin: 40px;
   align-items: center;
-  padding: 100px;
+  padding: 150px;
   float: right;
 }
 
