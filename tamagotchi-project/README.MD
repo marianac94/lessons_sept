@@ -7,4 +7,4 @@
 ### Page layout
 ![alt text](img/grid.png "Wireframe2")
 
-###### project in process, not finish yet.
+###### ---> Project in process, not finish yet.
