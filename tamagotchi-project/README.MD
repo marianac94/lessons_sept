@@ -5,6 +5,6 @@
 ##### Use the front-end web development skills to create a "living" pet! You'll have to use HTML, CSS, and JavaScript/jQuery to interact with the pet.
 
 ### Page layout
-![alt text](img/grid.png "Wireframe")
+![alt text](img/grid.png "Wireframe2")
 
 ###### project in process, not finish yet.
